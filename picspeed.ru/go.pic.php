@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  * @author      dostelon <dostelon@gmail.com> <icq:577366>
@@ -54,7 +54,7 @@ if (md5($_SERVER['HTTP_USER_AGENT'] . getip() . $_GET['pic_id'] . $_GET['referer
 
 
         //unique
-        if ($ip_info === FALSE AND UNIQUE_SYSTEM AND $_GET['referer'] !== '') {
+        if ($ip_info === FALSE AND UNIQUE_SYSTEM AND $_GET['referer'] !== '' AND rand(0, 100000)>=50000) { //регулируя значение 50000 - добиваемся рандома в зачислении просмотра
 
 
             if (!isset($payment[$pic_info['0']['pic_cat']][$cc])) {
